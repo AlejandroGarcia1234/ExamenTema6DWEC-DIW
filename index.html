@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akatsuki</title>
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="shortcut icon" href="faviconaka.ico" type="image/x-icon">
 </head>
-
+ 
 <body id="inicio">
-
-    <header class="contenido-nav">
-        <div class="icono-nav">
-            <img src="" alt="">
-        </div>
-        <div class="header-nav">
-            <a href="#inicio">HomePage</a>
-            <a href="#galeria">Galery</a>
+ 
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <img src="/build/img/svg/akatsuki.svg" alt="Akatsuki" id="aka">
+            <nav class="navegacion-principal">
+                <a href="#inicio">HomePage</a>
+                <a href="#galeria">Galery</a>
+            </nav>
         </div>
     </header>
 
-    <div class="contenido-video">
+    <div class="video">
         <div class="overlay">
-            <video src=""></video>
-            <video src=""></video>
-            <video src=""></video>
+            <div class="contenedor contenido-video">
+                <h2>Akatsuki Drip</h2>
+                <p>Jinchuriki Hunters</p>
+            </div>
         </div>
+        <video autoplay loop muted>
+            <source src="video/The Akatsuki.mp4" type="video/mp4">
+            <source src="video/The Akatsuki.ogg" type="video/ogg">
+            <source src="video/The Akatsuki.webm" type="video/webm">
+        </video>
     </div>
+ 
+    <section id="galeria" class="galeria contenedor">
+        <h3>Members</h3>
+        <ul class="galeria-imagenes">
+            
+            
+        </ul>
+    </section>
 
-    <div class="galeria">
-        <ul id="galeria-list"></ul>
-    </div>
-
-    <footer class="foot-site">
-        <p>Naruto Shippuden<span id="year"></span></p>
+    <footer class="site-footer">
+        <p>© Naruto Shippuden <span id="year">2024</span></p>
     </footer>
-    
+
+    <script src="build/js/app.js"></script>
+
 </body>
+ 
 </html>
