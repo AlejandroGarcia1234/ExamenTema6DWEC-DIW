@@ -1,3 +1,8 @@
+/**
+ * @author Alejandro García Álvarez
+ * @github @AlejandroGarcia1234
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
     prepararPagina();
   });
@@ -70,10 +75,4 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.add("fijar-body");
   }
 
-  function fixedNav{
-
-  }
-
-  function scrollNav{
-
-  }
+  
