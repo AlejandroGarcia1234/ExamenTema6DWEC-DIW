@@ -121,21 +121,47 @@
     }
   }
 
-/* Nav */
+  @media (min-width: 768px) {
+    .navegacion-principal {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  
+  .navegacion-principal a {
+    display: block;
+    font-size: 2.5rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--tertiary-color);
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .navegacion-principal a {
+      margin: 0;
+    }
+  }
+  
+  .navegacion-principal a:hover {
+    color: var(--secondary-color);
+  }
+
 
 .contenido-nav{
-    
+    margin: auto;
+    text-align: center;
 }
 
-.icono-nav{
-
-}
-
-.header-nav{
+.contenedor{
 
 }
 
-a{
+video{
+
+}
+
+.overlay{
 
 }
 
