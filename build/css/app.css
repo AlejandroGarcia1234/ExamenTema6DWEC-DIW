@@ -287,46 +287,16 @@
     cursor: pointer;
   }
 
-
-.contenedor{
-
-}
-
-video{
-
-}
-
-.overlay{
-
-}
-
-/* Video */
-
-.contenido-video{
-
-}
-
-.overlay{
-
-}
-
-video{
-
-}
-
-/* Galería */
-
-.galeria{
-
-}
-
-.galeria-list{
-
-}
-
-/* Footer */
-
-.foot-site{
-
-}
-
+  .site-footer {
+    margin-top: 10rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    height: 10rem;
+  }
+  
+  .site-footer p {
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--secondary-color);
+  }

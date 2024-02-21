@@ -69,3 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
     body.appendChild(overlay);
     body.classList.add("fijar-body");
   }
+
+  function fixedNav{
+
+  }
+
+  function scrollNav{
+
+  }
