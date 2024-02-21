@@ -1,6 +1,6 @@
 /**
  * @author Alejandro García Álvarez
- * @github @AlejandroGarcia1234
+ * @github https://github.com/AlejandroGarcia1234/ExamenTema6DWEC-DIW.git
  */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -75,4 +75,40 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.add("fijar-body");
   }
 
+  /** Con la siguiente función conseguiremos que la barra de navegación vuelva a aparecer llegado a cierto punto de la página **/
+
+function fixedNav() {
+    const barra = document.querySelector(".header");
+    const video = document.querySelector(".video");
+    const body = document.querySelector("body");
   
+    window.addEventListener("scroll", function () {
+      if (
+        video.getBoundingClientRect().bottom < 0 &&
+        this.window.innerWidth >= 768
+      ) {
+        barra.classList.add("fijo");
+        body.classList.add("body-scroll");
+      } else {
+        barra.classList.remove("fijo");
+        body.classList.remove("body-scroll");
+      }
+    });
+  }
+  
+  /** Gracias a esta función podremos desplazarnos más facilmente por la página web pudiendo clickar en los enlaces del header **/
+  
+  function scrollNav() {
+    const enlaces = document.querySelectorAll(".navegacion-principal a");
+  
+    enlaces.forEach((enlace) => {
+      enlace.addEventListener("click", function (e) {
+        e.preventDefault();
+        const seccionScroll = e.target.attributes.href.value;
+        const seccion = document.querySelector(seccionScroll);
+        seccion.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  }
+
+
