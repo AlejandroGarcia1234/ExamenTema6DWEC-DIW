@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const imagen = document.createElement("picture");
   
     imagen.innerHTML = `
-    <source srcset="build/img/big/${id}.webp" type="image/webp">
-    <img loading="lazy" width="200" height="300" src="build/img/big/${id}.jpg" alt="imagen big">`;
+    <source srcset="build/img/grande/${id}.webp" type="image/webp">
+    <img loading="lazy" width="200" height="300" src="build/img/grande/${id}.jpg" alt="imagen grande">`;
   
     // Crear Overlay con la imagen
     const overlay = document.createElement("DIV");

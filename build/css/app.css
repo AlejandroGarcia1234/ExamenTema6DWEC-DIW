@@ -272,7 +272,20 @@
     max-width: 80rem;
   }
 
+  .btn-cerrar {
+    display: grid;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    place-items: center;
+    font-weight: 700;
+  }
   
+  .btn-cerrar:hover {
+    cursor: pointer;
+  }
 
 
 .contenedor{
